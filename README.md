@@ -12,6 +12,7 @@ npm i tm-is
 
 ## Functions
 
+- isEmpty: returns true/false. true if passed argument is null, empty string or undefined.
 - isObject: returns true/false. true if passed argument is an object except null.
 - isFunction: returns true/false. true if passed argument is a function.
 

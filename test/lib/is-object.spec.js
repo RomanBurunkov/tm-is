@@ -12,5 +12,4 @@ describe('Test isObject function', () => {
       expect(isObject(val)).toBe(false);
     });
   });
-
 });
