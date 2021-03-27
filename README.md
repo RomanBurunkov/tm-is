@@ -1,5 +1,6 @@
 # tm-is
 
+[![npm](https://img.shields.io/npm/v/tm-is.svg)](https://www.npmjs.org/package/tm-is)
 [![codecov](https://codecov.io/gh/RomanBurunkov/tm-is/branch/main/graph/badge.svg?token=64HIR1FX0Z)](https://codecov.io/gh/RomanBurunkov/tm-is)
 
 JavaScript basic 'is' functions.
@@ -15,6 +16,7 @@ npm i tm-is
 - isEmpty: returns true/false. true if passed argument is null, empty string or undefined.
 - isObject: returns true/false. true if passed argument is an object except null.
 - isFunction: returns true/false. true if passed argument is a function.
+- isFunc: the same as isFunction.
 
 ## Example
 
