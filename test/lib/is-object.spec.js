@@ -1,5 +1,16 @@
-const isObject = require('../../lib/is-object');
+const { isObject } = require('../../index');
 
 describe('Test isObject function', () => {
-  test('isObject defined.', () => expect(isObject).toBeDefined());
+  test('isObject is defined.', () => expect(isObject).toBeDefined());
+
+  test('isObject returns true if object passed', () => {
+    expect(isObject({})).toBe(true);
+  });
+
+  ['', null, 5].forEach((val) => {
+    test(`isObject returns false if ${val} passed`, () => {
+      expect(isObject(val)).toBe(false);
+    });
+  });
+
 });

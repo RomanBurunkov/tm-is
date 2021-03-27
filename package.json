@@ -7,7 +7,7 @@
     "lint": "eslint --ignore-path .gitignore lib/** index.js",
     "lint:fix": "eslint --fix --ignore-path .gitignore lib/** index.js",
     "test": "jest",
-    "test:coverage": "jest --collect-coverage"
+    "test:coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -51,7 +51,6 @@
       "js",
       "json"
     ],
-    "rootDir": "test",
     "testRegex": ".spec.js$",
     "coverageDirectory": "./coverage"
   }
