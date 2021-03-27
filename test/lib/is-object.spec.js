@@ -7,7 +7,7 @@ describe('Test isObject function', () => {
     expect(isObject({})).toBe(true);
   });
 
-  ['', null, 5].forEach((val) => {
+  ['string', null, 5].forEach((val) => {
     test(`isObject returns false if ${val} passed`, () => {
       expect(isObject(val)).toBe(false);
     });
