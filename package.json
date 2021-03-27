@@ -4,6 +4,8 @@
   "description": "JavaScript basic 'is' functions.",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --ignore-path .gitignore lib/** index.js",
+    "lint:fix": "eslint --fix --ignore-path .gitignore lib/** index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +20,27 @@
   "bugs": {
     "url": "https://github.com/RomanBurunkov/tm-is/issues"
   },
-  "homepage": "https://github.com/RomanBurunkov/tm-is#readme"
+  "homepage": "https://github.com/RomanBurunkov/tm-is#readme",
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "jest": true
+    },
+    "parserOptions": {
+      "ecmaFeatures": {
+        "legacyDecorators": true
+      }
+    },
+    "extends": [
+      "airbnb-base"
+    ],
+    "rules": {
+      "import/prefer-default-export": "off"
+    }
+  }
 }
