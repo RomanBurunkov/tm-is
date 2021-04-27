@@ -1,6 +1,6 @@
 {
   "name": "tm-is",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "JavaScript basic 'is' functions.",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/RomanBurunkov/tm-is.git"
   },
   "keywords": [
-    "is, isObject, isFunction, isFunc, isEmpty"
+    "is, isObject, isFunction, isFunc, isEmpty, isUndefined"
   ],
   "author": "Roman Burunkov <romon2002@gmail.com>",
   "license": "MIT",
