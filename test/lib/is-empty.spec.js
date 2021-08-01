@@ -9,9 +9,17 @@ describe('Test isEmpty function', () => {
     });
   });
 
+  test('isEmpty returns true if no argumetns passed', () => {
+    expect(isEmpty()).toBe(true);
+  });
+
   ['', null, undefined].forEach((val) => {
     test(`isEmpty returns false if ${val} passed`, () => {
       expect(isEmpty(val)).toBe(true);
     });
+  });
+
+  test('isEmpty returns false if some from the args are not empty', () => {
+    expect(isEmpty(null, undefined, 'string')).toBe(false);
   });
 });
