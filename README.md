@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/tm-is.svg)](https://www.npmjs.org/package/tm-is)
 [![codecov](https://codecov.io/gh/RomanBurunkov/tm-is/branch/main/graph/badge.svg?token=64HIR1FX0Z)](https://codecov.io/gh/RomanBurunkov/tm-is)
 
-JavaScript basic 'is' functions.
+JavaScript basic 'is' functions for Node.
 
 ## Installation
 
@@ -11,16 +11,31 @@ JavaScript basic 'is' functions.
 npm i tm-is
 ```
 
+## Description
+
+Module provides a bunch of functions which return true or false.
+All functions support zero or more arguments.
+If several arguments passed, all of them should meet function conditions.
+Conditions for each function described in the Functions section.
+
+E.g.
+
+```js
+  isObject({}); // true
+  isObject({}, {}); // true
+  isObject({}, 'str'); // false, since not all arguments are objects.
+```
+
 ## Functions
 
-- `isEmpty`: returns true/false. true if passed argument is null, empty string or undefined.
-- `isObject`/`isObj`: returns true/false. true if passed argument is an object except null.
-- `isFunction`/`isFunc`: returns true/false. true if passed argument is a function.
-- `isUndefined`/`isUndef`: returns true/false. true if passed argument is undefined.
+- `isEmpty`: Returns true if passed argument is null, empty string or undefined.
+- `isObject`/`isObj`: Returns true if passed argument is an object except null.
+- `isFunction`/`isFunc`: Returns true if passed argument is a function.
+- `isUndefined`/`isUndef`: Returns true if passed argument is undefined.
 
-## Example
+## Examples
 
-```
+```js
 const { isObject, isFunction } = require('tm-is');
 
 console.log(isObject({})); // true
