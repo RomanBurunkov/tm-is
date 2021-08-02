@@ -5,13 +5,23 @@ describe('Test isObject function', () => {
   test('isObj is defined.', () => expect(isObj).toBeDefined());
   test('isObj is equal isObject.', () => expect(isObj).toBe(isObject));
 
-  test('isObject returns true if object passed', () => {
-    expect(isObject({})).toBe(true);
+  [[{}], [{}, {}]].forEach((val) => {
+    test(`isObject returns true if ${val.length} object(s) passed`, () => {
+      expect(isObject(...val)).toBe(true);
+    });
   });
 
-  ['string', null, 5].forEach((val) => {
+  test('isObject returns false if nothing passed', () => {
+    expect(isObject()).toBe(false);
+  });
+
+  ['string', null, 5, undefined].forEach((val) => {
     test(`isObject returns false if ${val} passed`, () => {
       expect(isObject(val)).toBe(false);
     });
+  });
+
+  test('isObject returns false if object and string passed', () => {
+    expect(isObject({}, 'string')).toBe(false);
   });
 });
