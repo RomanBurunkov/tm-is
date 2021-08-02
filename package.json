@@ -1,6 +1,6 @@
 {
   "name": "tm-is",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "JavaScript basic 'is' functions.",
   "main": "index.js",
   "scripts": {
