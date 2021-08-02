@@ -1,8 +1,16 @@
-exports.isEmpty = require('./lib/is-empty');
-exports.isObject = require('./lib/is-object.js');
-exports.isFunction = require('./lib/is-function');
-exports.isUndefined = require('./lib/is-undefined.js');
-// Aliases
-exports.isObj = exports.isObject;
-exports.isFunc = exports.isFunction;
-exports.isUndef = exports.isUndefined;
+const methods = [
+  { name: 'isEmpty', file: 'is-empty' },
+  { name: 'isObject', file: 'is-object', aliases: ['isObj'] },
+  { name: 'isFunction', file: 'is-function', aliases: ['isFunc'] },
+  { name: 'isUndefined', file: 'is-undefined', aliases: ['isUndef'] },
+];
+
+methods.forEach((method) => {
+  // eslint-disable-next-line global-require, import/no-dynamic-require
+  exports[method.name] = require(`./lib/${method.file}`);
+  if (Array.isArray(method.aliases) && method.aliases.length) {
+    method.aliases.forEach((alias) => {
+      exports[alias] = exports[method.name];
+    });
+  }
+});
