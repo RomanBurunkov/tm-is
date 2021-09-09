@@ -32,6 +32,7 @@ E.g.
 - `isObject`/`isObj`: Returns true if passed argument is an object except null.
 - `isFunction`/`isFunc`: Returns true if passed argument is a function.
 - `isUndefined`/`isUndef`: Returns true if passed argument is undefined.
+- `isEqualArrays`/`isEqArr`: Returns true if passed arguments are equal arrays.
 
 ## Examples
 
