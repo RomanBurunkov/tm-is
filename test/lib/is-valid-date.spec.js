@@ -9,17 +9,21 @@ describe('Test isValidDate function', () => {
     expect(isValidDate()).toBe(false);
   });
 
-  test('isValidDate returns false if undefined passed', () => {
-    expect(isValidDate(undefined)).toBe(false);
+  ['', null, 'qwerty', undefined].forEach((val) => {
+    test(`isValidDate returns false if ${val} passed`, () => {
+      expect(isValidDate(val)).toBe(false);
+    });
   });
 
   test('isValidDate returns false if one of the arguments is  not a valid date', () => {
     expect(isValidDate(1000, 'qwerty')).toBe(false);
   });
 
-  ['', null, 'qwerty'].forEach((val) => {
-    test(`isValidDate returns false if ${val} passed`, () => {
-      expect(isValidDate(val)).toBe(false);
-    });
+  test('isValidDate returns true if number passed', () => {
+    expect(isValidDate(100000)).toBe(true);
+  });
+
+  test('isValidDate returns true if date passed', () => {
+    expect(isValidDate('2024-12-28')).toBe(true);
   });
 });

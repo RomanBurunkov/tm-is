@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint --ignore-path .gitignore lib/** index.js",
     "lint:tests": "eslint --fix --ignore-path .gitignore test/lib/**",
-    "lint:fix": "eslint --fix --ignore-path .gitignore lib/** index.js",
+    "lint:fix": "eslint --fix --ignore-path .gitignore lib/** index.js test/lib/**",
     "test": "jest",
     "test:coverage": "jest --coverage"
   },
