@@ -33,6 +33,7 @@ E.g.
 - `isFunction`/`isFunc`: Returns true if passed argument is a function.
 - `isUndefined`/`isUndef`: Returns true if passed argument is undefined.
 - `isEqualArrays`/`isEqArr`: Returns true if passed arguments are equal arrays.
+- `isValidDate`/`isDate`: Returns true if passed arguments are valid date string or number.
 
 ## Examples
 
@@ -46,5 +47,9 @@ console.log(isObject('string')); // false
 console.log(isFunction('null')); // false
 console.log(isFunction('string')); // false
 console.log(isFunction(() => { })); // true
+
+console.log(isValidDate(null)); // false
+console.log(isValidDate('qwertyuiop')); // false
+console.log(isValidDate('2024-12-27')); // true
 
 ```
