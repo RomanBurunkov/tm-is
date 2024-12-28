@@ -1,6 +1,6 @@
 {
   "name": "tm-is",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "JavaScript basic 'is' functions.",
   "main": "index.js",
   "scripts": {
@@ -24,10 +24,10 @@
   },
   "homepage": "https://github.com/RomanBurunkov/tm-is#readme",
   "devDependencies": {
-    "eslint": "^7.23.0",
+    "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "jest": "^26.6.3"
+    "eslint-plugin-import": "^2.31.0",
+    "jest": "^27.5.1"
   },
   "eslintConfig": {
     "env": {
