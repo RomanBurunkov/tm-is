@@ -3,6 +3,7 @@ const methods = [
   { name: 'isObject', file: 'is-object', aliases: ['isObj'] },
   { name: 'isFunction', file: 'is-function', aliases: ['isFunc'] },
   { name: 'isUndefined', file: 'is-undefined', aliases: ['isUndef'] },
+  { name: 'isValidDate', file: 'is-valid-date', aliases: ['isDate', 'isValDate'] },
   { name: 'isEqualArrays', file: 'is-equal-arrays', aliases: ['isEqArr', 'isEqualArr'] },
 ];
 
