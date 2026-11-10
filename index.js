@@ -1,3 +1,5 @@
+const isNotEmptyArray = require('./lib/is-not-empty-array');
+
 const methods = [
   { name: 'isEmpty', file: 'is-empty' },
   { name: 'isObject', file: 'is-object', aliases: ['isObj'] },
@@ -11,7 +13,7 @@ const methods = [
 methods.forEach((method) => {
   // eslint-disable-next-line global-require, import/no-dynamic-require
   exports[method.name] = require(`./lib/${method.file}`);
-  if (Array.isArray(method.aliases) && method.aliases.length) {
+  if (isNotEmptyArray(method.aliases)) {
     method.aliases.forEach((alias) => {
       exports[alias] = exports[method.name];
     });
