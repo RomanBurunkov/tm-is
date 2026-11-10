@@ -33,6 +33,7 @@ E.g.
 - `isFunction`/`isFunc`: Returns true if passed argument is a function.
 - `isUndefined`/`isUndef`: Returns true if passed argument is undefined.
 - `isEqualArrays`/`isEqArr`: Returns true if passed arguments are equal arrays.
+- `isNotEmptyArray`/`isNotEmptyArr`: Returns true if at least one argument is passed and all arguments are non-empty arrays. Arrays are considered non-empty when their length is greater than zero.
 - `isValidDate`/`isDate`: Returns true if passed arguments are valid date string or number.
 
 ## Examples
