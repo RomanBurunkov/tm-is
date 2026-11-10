@@ -8,6 +8,7 @@ const methods = [
   { name: 'isValidDate', file: 'is-valid-date', aliases: ['isDate', 'isValDate'] },
   { name: 'isEqualArrays', file: 'is-equal-arrays', aliases: ['isEqArr', 'isEqualArr'] },
   { name: 'isNotEmptyArray', file: 'is-not-empty-array', aliases: ['isNotEmptyArr'] },
+  { name: 'isUUID', file: 'is-uuid' },
 ];
 
 methods.forEach((method) => {
