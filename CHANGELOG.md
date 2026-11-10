@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.4.0 (Unreleased)
+## 0.4.0 — 2026-11-10.
 
 - Added `isNotEmptyArray` and its alias `isNotEmptyArr`.
 - Added `isUUID` for UUID versions 1–8, excluding Nil and Max UUIDs.
