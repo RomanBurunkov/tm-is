@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+## 0.4.1 — 2026-11-18.
+
+- Moved ESLint and Jest configurations from `package.json` to separate files.
+- Excluded test and development files from the npm package.
+
 ## 0.4.0 — 2026-11-10.
 
 - Added `isNotEmptyArray` and its alias `isNotEmptyArr`.
