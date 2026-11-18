@@ -2,6 +2,7 @@
 
 ## Unreleased
 - Moved ESLint config from `package.json` into separate file.
+- Moved Jest config from `package.json` into separate file.
 
 ## 0.4.0 — 2026-11-10.
 
