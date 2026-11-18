@@ -1,7 +1,8 @@
 {
   "name": "tm-is",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "JavaScript basic 'is' functions.",
+  "files": ["index.js", "lib"],
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ignore-path .gitignore lib/** index.js",
