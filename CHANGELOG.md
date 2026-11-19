@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 0.4.2 — 2026-11-18.
+
+- Added basic TypeScript type definitions for functions.
+
 ## 0.4.1 — 2026-11-18.
 
 - Moved ESLint and Jest configurations from `package.json` to separate files.
