@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+## 0.4.2 — 2026-11-19.
+
+- Replaced dynamic exports with explicit exports.
+- Added basic TypeScript type definitions for functions.
+
 ## 0.4.1 — 2026-11-18.
 
 - Moved ESLint and Jest configurations from `package.json` to separate files.

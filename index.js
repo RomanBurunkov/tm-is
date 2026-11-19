@@ -1,22 +1,32 @@
+const isEmpty = require('./lib/is-empty');
+const isObject = require('./lib/is-object');
+const isFunction = require('./lib/is-function');
+const isUndefined = require('./lib/is-undefined');
+const isValidDate = require('./lib/is-valid-date');
+const isEqualArrays = require('./lib/is-equal-arrays');
 const isNotEmptyArray = require('./lib/is-not-empty-array');
+const isUUID = require('./lib/is-uuid');
 
-const methods = [
-  { name: 'isEmpty', file: 'is-empty' },
-  { name: 'isObject', file: 'is-object', aliases: ['isObj'] },
-  { name: 'isFunction', file: 'is-function', aliases: ['isFunc'] },
-  { name: 'isUndefined', file: 'is-undefined', aliases: ['isUndef'] },
-  { name: 'isValidDate', file: 'is-valid-date', aliases: ['isDate', 'isValDate'] },
-  { name: 'isEqualArrays', file: 'is-equal-arrays', aliases: ['isEqArr', 'isEqualArr'] },
-  { name: 'isNotEmptyArray', file: 'is-not-empty-array', aliases: ['isNotEmptyArr'] },
-  { name: 'isUUID', file: 'is-uuid' },
-];
+exports.isEmpty = isEmpty;
 
-methods.forEach((method) => {
-  // eslint-disable-next-line global-require, import/no-dynamic-require
-  exports[method.name] = require(`./lib/${method.file}`);
-  if (isNotEmptyArray(method.aliases)) {
-    method.aliases.forEach((alias) => {
-      exports[alias] = exports[method.name];
-    });
-  }
-});
+exports.isObject = isObject;
+exports.isObj = isObject;
+
+exports.isFunction = isFunction;
+exports.isFunc = isFunction;
+
+exports.isUndefined = isUndefined;
+exports.isUndef = isUndefined;
+
+exports.isValidDate = isValidDate;
+exports.isDate = isValidDate;
+exports.isValDate = isValidDate;
+
+exports.isEqualArrays = isEqualArrays;
+exports.isEqArr = isEqualArrays;
+exports.isEqualArr = isEqualArrays;
+
+exports.isNotEmptyArray = isNotEmptyArray;
+exports.isNotEmptyArr = isNotEmptyArray;
+
+exports.isUUID = isUUID;
